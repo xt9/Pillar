@@ -23,7 +23,7 @@ public enum GeneratorType {
     SURFACE(true, GeneratorType::surfacePos),
     UNDERGROUND(true, GeneratorType::undergroundPos),
     UNDERWATER(true, GeneratorType::underwaterPos),
-    ABOVE_WATER(true, GeneratorType::aboveWaterPos),
+    ABOVE_WATER(false, GeneratorType::aboveWaterPos),
     SKY(false, GeneratorType::skyPos),
     ANYWHERE(false, GeneratorType::anywherePos),
     NONE(false, GeneratorType::disallow);
