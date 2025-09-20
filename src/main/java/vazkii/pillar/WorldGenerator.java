@@ -99,7 +99,7 @@ public class WorldGenerator implements IWorldGenerator {
 
         // Check the minimum distance between structures
         for (BlockPos generatedPos : structureKnownPositions) {
-            if (pos.distanceSq(generatedPos) <= Pillar.minDistanceBetweenStructures * Pillar.minDistanceBetweenStructures) {
+            if (pos.distanceSq(generatedPos) <= schema.minDistanceToSameTypeStructures * schema.minDistanceToSameTypeStructures) {
                 return false;
             }
         }
